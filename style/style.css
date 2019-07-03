@@ -7,8 +7,40 @@
   margin: 0 0 0 0;
 }
 
+<<<<<<< HEAD
 #options_bar {
   display: flexbox;
   justify-content: center;
   align-content: center;
+=======
+.content{
+  height: 96.7%;
+}
+
+html, body {
+    height: 100%;
+}
+
+.maincontainer{
+  height:100%;
+}
+
+.wrapper{
+  height:100%;
+}
+
+.ui.grid {
+    height: 100%;
+}
+#right-column{
+  position: relative;
+  height: 100%;
+  padding: 0 0 0 0 !important;
+}
+#map{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+>>>>>>> f02d75f2692fd556f959dd7dcc67e89a1ed1ff95
 }
