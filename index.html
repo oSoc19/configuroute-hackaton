@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
 
-    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="style/semantic.min.css">
     <script
       src="https://code.jquery.com/jquery-3.1.1.min.js"
       integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
       crossorigin="anonymous"></script>
-    <script src="semantic/dist/semantic.min.js"></script>
+    <script src="script/semantic.min.js"></script>
 
     <link rel="stylesheet" href="style/style.css">
     <script src="script/script.js" charset="utf-8"></script>
@@ -18,9 +18,42 @@
     <div class="content">
       <div class="nav-bar">This is the title</div>
       <div class="ui grid">
-        <div class="eight wide column" id="left-column">
-          <!-- Config editing -->
-        </div>
+          <div class="ui eight wide grid">
+            <div class="column green" id="options_bar">
+
+              <p> Options </p>
+              <div class="ui search">
+                <div class="ui icon input">
+                  <input class="prompt" type="text" placeholder="Search parameter...">
+                  <i class="search icon"></i>
+                </div>
+                <div class="results"></div>
+              </div>
+
+              
+              <select class="ui search dropdown">
+                  <option value="Lijn">Lijn</option>
+                  <option value="NMBS">NMBS</option>
+                  <option value="TEC"> Tec </option>
+                  <option value ="STIB"> STIB </option>
+              </select>
+              
+                <div class="ui checkbox">
+                    <input type="checkbox" name="Electric scouter">
+                    <label> electric scouter </label>
+                </div>
+                <div class="ui checkbox">
+                    <input type="checkbox" name="skate board">
+                    <label> skate board </label>
+                </div>
+          </div>
+
+            <div class="eight wide column" >
+              <p> JSON editor </p>
+            
+            </div>
+          </div>
+
         <div class="eight wide column" id="right-column">
           <!-- Map content -->
         </div>

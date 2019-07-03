@@ -6,3 +6,9 @@
   padding: 5px;
   margin: 0 0 0 0;
 }
+
+#options_bar {
+  display: flexbox;
+  justify-content: center;
+  align-content: center;
+}
