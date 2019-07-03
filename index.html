@@ -18,15 +18,46 @@
     <title>Configuroute</title>
   </head>
   <body>
-  <div class="nav-bar">This is the title</div>
+    <div class="nav-bar">This is the title</div>
     <div class="content">
-        <div class="wrapper">
-        <div class="ui equal height stretched grid">
-          <div class="ui eight wide red column" id="left-column">
-            <!-- Config editing -->
+      <div class="wrapper">
+        <div class="ui two column grid">
+          <div class="column" id="left-column">
+            <div class="ui two column grid">
+              <div class="column form_column">
+
+                <div class="ui mini icon input">
+                  <i class="search icon"></i>
+                  <input type="text" placeholder="Search...">
+                </div>
+  
+                
+                <select class="ui search dropdown">
+                    <option value="Lijn">Lijn</option>
+                    <option value="NMBS">NMBS</option>
+                    <option value="TEC"> Tec </option>
+                    <option value ="STIB"> STIB </option>
+                </select>
+                
+                <div class="ui checkbox">
+                    <input type="checkbox" name="Electric scouter">
+                    <label> electric scouter </label>
+                </div>
+                <div class="ui checkbox">
+                    <input type="checkbox" name="skate board">
+                    <label> skate board </label>
+                </div>
+
+              </div>
+              <div class="column form_column">
+
+                <span>text</span>
+
+              </div>
+            </div>
           </div>
-          <div class="ui eight wide green column" id="right-column">
-            <!-- Map content -->
+
+          <div class="green column" id="right-column">
             <div id='map' style=''></div>
             <script>
               mapboxgl.accessToken = 'pk.eyJ1Ijoid291dGVydmRkIiwiYSI6ImNqczRvbzRlMzA2a2UzeWx4MHlqem1lajYifQ.-kYtzbZnQhJTVeh8zDfgYg';
@@ -35,6 +66,7 @@
               style: 'mapbox://styles/mapbox/streets-v11'
               });
             </script>
+            </div>
           </div>
         </div>
       </div>
