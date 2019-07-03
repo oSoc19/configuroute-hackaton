@@ -7,13 +7,8 @@
   margin: 0 0 0 0;
 }
 
-<<<<<<< HEAD
-#options_bar {
-  display: flexbox;
-  justify-content: center;
-  align-content: center;
-=======
 .content{
+  margin-top: 1.8%;
   height: 96.7%;
 }
 
@@ -37,10 +32,20 @@ html, body {
   height: 100%;
   padding: 0 0 0 0 !important;
 }
+
+#left-column{
+  height: 100%;
+  overflow: hidden;
+}
+
+.form_column{
+  height: 100%;
+  overflow: hidden;
+}
+
 #map{
   position: absolute;
   top: 0;
   bottom: 0;
   width: 100%;
->>>>>>> f02d75f2692fd556f959dd7dcc67e89a1ed1ff95
 }
