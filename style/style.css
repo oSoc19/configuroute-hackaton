@@ -23,9 +23,31 @@ html, body {
   height:100%;
 }
 
-.ui.grid {
+.ui.grid.full-height {
     height: 100%;
 }
+
+.nav-control-container{
+  width: 100%;
+}
+.nav-control-input{
+  border: 1.8px solid rgba(0,0,0,.2) !important;
+}
+.nav-control-input:focus{
+  border: 1.8px solid rgba(0, 180, 90, 0.575) !important;
+}
+
+.nav-control-button{
+  border: 1.8px solid rgba(0,0,0,.2) !important;
+  background-color: white !important;
+}
+.nav-control-button:hover{
+  border: 1.8px solid rgba(0, 180, 90, 0.575) !important;
+}
+.nav-control-button:focus{
+  border: 1.8px solid rgba(0, 180, 90, 0.575) !important;
+}
+
 #right-column{
   position: relative;
   height: 100%;
@@ -35,5 +57,5 @@ html, body {
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 100%;
+  width: 98.5%;
 }
