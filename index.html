@@ -10,62 +10,47 @@
       crossorigin="anonymous"></script>
     <script src="script/semantic.min.js"></script>
     <link rel="stylesheet" href="style/style.css">
-    <script src="script/script.js" charset="utf-8"></script>
+    
     <!--mapbox-->
     <script src='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css' rel='stylesheet' />
-    <script src="script/mapbox_config.js" charset="utf-8"></script>
+    <!--planner.js-->
+    <script src="https://planner.js.org/js/planner-latest.js"></script>
+    <!--custom script-->
+    <script src="script/script.js" charset="utf-8"></script>
     <title>Configuroute</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
   </head>
   <body>
-    <div class="nav-bar">This is the title</div>
+  <div class="nav-bar">Configuroute</div>
     <div class="content">
-      <div class="wrapper">
-        <div class="ui two column grid">
-          <div class="column" id="left-column">
-            <div class="ui two column grid">
-              <div class="column form_column">
-
-                <div class="ui mini icon input">
-                  <i class="search icon"></i>
-                  <input type="text" placeholder="Search...">
-                </div>
-  
-                
-                <select class="ui search dropdown">
-                    <option value="Lijn">Lijn</option>
-                    <option value="NMBS">NMBS</option>
-                    <option value="TEC"> Tec </option>
-                    <option value ="STIB"> STIB </option>
-                </select>
-                
-                <div class="ui checkbox">
-                    <input type="checkbox" name="Electric scouter">
-                    <label> electric scouter </label>
-                </div>
-                <div class="ui checkbox">
-                    <input type="checkbox" name="skate board">
-                    <label> skate board </label>
-                </div>
-
-              </div>
-              <div class="column form_column">
-
-                <span>text</span>
-
-              </div>
-            </div>
+        <div class="wrapper">
+        <div class="ui equal height full-height stretched grid">
+          <div class="ui eight wide red column" id="left-column">
+            <!-- Config editing -->
           </div>
-
-          <div class="green column" id="right-column">
-            <div id='map' style=''></div>
-            <script>
-              mapboxgl.accessToken = 'pk.eyJ1Ijoid291dGVydmRkIiwiYSI6ImNqczRvbzRlMzA2a2UzeWx4MHlqem1lajYifQ.-kYtzbZnQhJTVeh8zDfgYg';
-              var map = new mapboxgl.Map({
-              container: 'map',
-              style: 'mapbox://styles/mapbox/streets-v11'
-              });
-            </script>
+          <div class="ui eight wide grey column" id="right-column">
+            <!-- Map content -->
+            <div id='map'></div>
+            <!-- nav input -->
+            <div class="ui grid" style="display: block; overflow: auto; margin: -6px 20px -6px -6px;">
+              <div class="six wide left aligned column" style="padding-bottom: 0; padding-right: 0;">
+                <div class="ui input nav-control-container">
+                    <input class="nav-control-input" type="text" placeholder="from..." value="Rue dupond 32">
+                </div>
+              </div>
+              <div class="six wide left aligned column" style="padding-bottom: 0; padding-right: 0;">
+                <div class="ui input nav-control-container">
+                    <input class="nav-control-input" type="text" placeholder="to..." value="WTC 3 BOSA">
+                </div>
+              </div>
+              <div class="three wide left aligned column" style="padding-bottom: 0;">
+                  <button class="ui button right labeled icon nav-control-button" id="calculate-route">
+                    <i class="right arrow icon"></i>
+                    Calculate
+                  </button>
+              </div>
             </div>
           </div>
         </div>
