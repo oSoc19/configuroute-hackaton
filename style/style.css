@@ -8,6 +8,7 @@
 }
 
 .content{
+  margin-top: 1.8%;
   height: 96.7%;
 }
 
@@ -53,6 +54,17 @@ html, body {
   height: 100%;
   padding: 0 0 0 0 !important;
 }
+
+#left-column{
+  height: 100%;
+  overflow: hidden;
+}
+
+.form_column{
+  height: 100%;
+  overflow: hidden;
+}
+
 #map{
   position: absolute;
   top: 0;
